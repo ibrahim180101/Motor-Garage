@@ -1,0 +1,7 @@
+services:
+  motor-garage:
+    build: .
+    container_name: motor-garage
+    ports:
+      - "80:80"
+    restart: unless-stopped
