@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLocationDot, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 import { Link } from 'react-router';
 import logo from '../assets/images/logo.png';
