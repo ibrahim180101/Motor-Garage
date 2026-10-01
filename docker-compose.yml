@@ -1,6 +1,6 @@
 services:
   motor-garage:
-    build: .
+    image: motor-garage:${IMAGE_TAG}
     container_name: motor-garage
     ports:
       - "80:80"
