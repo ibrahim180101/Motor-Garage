@@ -1,4 +1,4 @@
-# 🚗 Motor Garage — React Auto Service Websites
+# 🚗 Motor Garage — React Auto Service Website
 
 A modern and responsive auto-repair service website built with **React + Vite**, featuring dynamic pages, a booking modal, service details, blogs, contact form, and Google Maps integration.
 
