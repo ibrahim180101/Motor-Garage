@@ -1,19 +1,21 @@
 import React from 'react';
+import { FaStar } from 'react-icons/fa';
 
-const User = ({user}) => {
-    const{name, avatar, username, text} = user
-    return (
-        <div className='p-6 w-[350px] h-[200px] ml-6 rounded-2xl hover:scale-105 duration-500 border cursor-pointer border-gray-200'>
-            <div className='flex items-center gap-3'>
-                <img className='h-12 w-12 rounded-full object-cover' src={avatar} alt="not found" />
-                <div>
-                    <h3 className='text-black text-base font-bold'>{name}</h3>
-                    <p className='text-sm text-black'>{username}</p>
-                </div>
-            </div>
-            <p className='text-base text-[#495057] mt-4'>{text}</p>
+const User = ({ user }) => {
+  const { name, avatar, username, text } = user;
+  return (
+    <article className="ml-6 w-[350px] rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-500 hover:-translate-y-2 hover:shadow-xl">
+      <div className="flex items-center gap-3">
+        <img className="h-12 w-12 rounded-full object-cover ring-4 ring-red-50" src={avatar} alt={name} />
+        <div>
+          <h3 className="font-extrabold text-slate-900">{name}</h3>
+          <p className="text-sm text-slate-500">{username}</p>
         </div>
-    );
+        <div className="ml-auto flex gap-0.5 text-xs text-amber-400"><FaStar /><FaStar /><FaStar /><FaStar /><FaStar /></div>
+      </div>
+      <p className="mt-5 text-sm leading-7 text-slate-600">“{text}”</p>
+    </article>
+  );
 };
 
 export default User;
