@@ -9,14 +9,19 @@ import homeimage from '../assets/images/home.png';
 
 const HomePage = () => {
   return (
-    <div>
-        <Hero title={"Honesty. Quality. Care. That's What Drives Us."} description={"At our shop, every repair starts with transparency and ends with satisfaction. We believe in honest diagnostics,fair pricing, and top-notch craftsmanshipl"} home={true} image={homeimage}></Hero>
-        <Facilities></Facilities>
-        <Choice></Choice>
-        <Services></Services>
-        <Offer></Offer>
-      <Testimonials></Testimonials>
-    </div>
+    <main className="overflow-hidden">
+      <Hero
+        title="Honesty. Quality. Care. That's What Drives Us."
+        description="From routine maintenance to complex repairs, our technicians keep your vehicle safe, reliable, and ready for the road."
+        home={true}
+        image={homeimage}
+      />
+      <Facilities />
+      <Choice />
+      <Services />
+      <Offer />
+      <Testimonials />
+    </main>
   );
 };
 
